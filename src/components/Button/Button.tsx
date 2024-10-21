@@ -1,14 +1,20 @@
 import { FiDownload } from "react-icons/fi";
 import "./button.css";
 import { ButtonProps } from "./types";
-const Button = ({ type, disabled }: ButtonProps) => {
+
+const Button = ({ type = "primary", disabled, children }: ButtonProps) => {
   const className = ` button ${type}`;
-  console.log(disabled);
+  const addClickHandler = () => {};
+
   return (
     <>
-      <button className={className} disabled={disabled}>
+      <button
+        className={className}
+        disabled={disabled}
+        onClick={addClickHandler}
+      >
         <FiDownload />
-        primary button
+        {children}
       </button>
     </>
   );
