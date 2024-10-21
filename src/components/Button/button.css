@@ -4,7 +4,6 @@
   text-transform: uppercase;
   display: inline-flex;
   gap: 8px;
-  color: white;
   height: 43px;
   border-radius: 8px;
   padding: 12px 16px;
@@ -17,22 +16,26 @@
 /* -------PRIMARY DEFAULT-------- */
 .primary {
   background-color: #0084ff;
+  color: white;
   border: none;
 }
 /* -------PRIMARY HOVER-------- */
 .primary:hover {
   transform: scale(0.95);
+  color: white;
   cursor: pointer;
   background-color: #46a6ff;
   border: none;
 }
 /* -------PRIMARY CLICKED-------- */
 .primary:active {
+  color: white;
   background-color: #0067c7;
   border: none;
 }
 /* -------PRIMARY DISABLED-------- */
 .primary:disabled {
+  color: white;
   background-color: #999b9c;
   border: none;
   cursor: not-allowed;
