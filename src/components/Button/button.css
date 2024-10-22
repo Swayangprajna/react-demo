@@ -69,3 +69,29 @@
   transform: none;
   opacity: 0.6;
 }
+
+/* -------TERNARY DEFAULT-------- */
+.ternary {
+  color: #0084ff;
+  background-color: transparent;
+  border: none;
+}
+/* -------TERNARY HOVER-------- */
+.ternary:hover {
+  transform: scale(0.95);
+  color: #46a6ff;
+  border: none;
+}
+/* -------TERNARY CLICKED-------- */
+.ternary:active {
+  color: #0067c7;
+  border: none;
+}
+/* -------TERNARY DISABLED-------- */
+.ternary:disabled {
+  color: #999b9c;
+  cursor: not-allowed;
+  transform: none;
+  border: none;
+  opacity: 0.6;
+}
