@@ -42,3 +42,30 @@
   transform: none;
   opacity: 0.6;
 }
+
+/* -------SECONDARY DEFAULT-------- */
+.secondary {
+  color: #0084ff;
+  border: 1px solid #0084ff;
+  background-color: transparent;
+}
+/* -------SECONDARY HOVER-------- */
+.secondary:hover {
+  transform: scale(0.95);
+  color: #46a6ff;
+  border: 1px solid #46a6ff;
+  cursor: pointer;
+}
+/* -------SECONDARY CLICKED-------- */
+.secondary:active {
+  color: #0067c7;
+  border: 1px solid #0067c7;
+}
+/* -------SECONDARY DISABLED-------- */
+.secondary:disabled {
+  color: #999b9c;
+  border: 1px solid #999b9c;
+  cursor: not-allowed;
+  transform: none;
+  opacity: 0.6;
+}
