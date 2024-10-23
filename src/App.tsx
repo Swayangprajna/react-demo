@@ -34,6 +34,16 @@ function App() {
       <Input variant="info" infoText="This is a info text">
         input lable2
       </Input>
+      <br />
+      <br />
+      <Button type="ternary" onClick={handleClick}>
+        ternary button
+      </Button>
+      <br />
+      <br />
+      <Button type="ternary" disabled>
+        ternary disabled
+      </Button>
     </>
   );
 }
