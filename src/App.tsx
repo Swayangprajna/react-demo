@@ -1,9 +1,10 @@
 import Button from "./components/Button";
+import Input from "./components/Input";
 
 function App() {
   const handleClick = () => {};
   return (
-    <>
+    <div className="container">
       <Button type="primary" onClick={handleClick}>
         Button Primary
       </Button>
@@ -32,7 +33,17 @@ function App() {
       <Button type="ternary" disabled>
         ternary disabled
       </Button>
-    </>
+      {/* 
+         -------------------------------INPUT SECTION ---------*/}
+      <br />
+      <br />
+      <hr />
+      <Input lable="lable name1" />
+      <br />
+      <br />
+
+      <Input infoMessage="This is a info text" lable="lable name2" />
+    </div>
   );
 }
 
