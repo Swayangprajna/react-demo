@@ -46,6 +46,8 @@ function App() {
       <br />
 
       <Input errorMessage="This field is mandatory" lable="lable name3" />
+      <br />
+      <Input lable="Enter your password" type="password" />
     </div>
   );
 }

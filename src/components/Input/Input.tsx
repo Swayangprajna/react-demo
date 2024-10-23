@@ -17,7 +17,7 @@ const Input = ({
 
   return (
     <>
-      <label htmlFor="fname" className="label">
+      <label htmlFor="fname" className={errorMessage ? "label-error" : "label"}>
         {lable}
       </label>
       <br />
