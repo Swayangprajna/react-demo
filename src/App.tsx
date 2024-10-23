@@ -4,7 +4,7 @@ import Input from "./components/Input";
 function App() {
   const handleClick = () => {};
   return (
-    <>
+    <div className="container">
       <Button type="primary" onClick={handleClick}>
         Button Primary
       </Button>
@@ -42,8 +42,8 @@ function App() {
       <br />
       <br />
 
-      <Input infoText="This is a info text" lable="lable name2" />
-    </>
+      <Input infoMsg="This is a info text" lable="lable name2" />
+    </div>
   );
 }
 

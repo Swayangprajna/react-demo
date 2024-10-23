@@ -1,5 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .input-box {
-  width: 95%;
+  width: 100%;
   padding: 16px 10px;
   border-radius: 4px;
   border: 1px solid #999b9c;
@@ -8,11 +14,10 @@
   color: #000000;
   font-size: 12px;
   font-weight: 700;
-  width: 57px;
-  height: 14px;
+  margin-left: 8px;
 }
 
-.info-text {
+.info-msg {
   color: #46a6ff;
   font-size: 12px;
   margin-top: 2px;

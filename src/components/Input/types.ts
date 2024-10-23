@@ -3,5 +3,5 @@ export type Inputprops = {
   disabled?: boolean;
   placeholder?: string;
   lable: string;
-  infoText?: string;
+  infoMsg?: string;
 };
