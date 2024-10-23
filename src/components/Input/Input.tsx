@@ -7,6 +7,7 @@ const Input = ({
   disabled = false,
   placeholder = "",
   lable,
+  value,
   infoMsg,
 }: Inputprops) => {
   // const className = `input-box input-${variant}`;
@@ -19,6 +20,7 @@ const Input = ({
       </label>
       <br />
       <input
+        value={value}
         id="fname"
         type={type}
         className={className}

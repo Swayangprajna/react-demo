@@ -4,4 +4,5 @@ export type Inputprops = {
   placeholder?: string;
   lable: string;
   infoMsg?: string;
+  value?: string;
 };
