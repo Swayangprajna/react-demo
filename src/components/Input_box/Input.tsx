@@ -1,4 +1,4 @@
-import React, { PropsWithChildren } from "react";
+import React from "react";
 import "./input.css";
 import { Inputprops } from "./types";
 
@@ -6,16 +6,18 @@ const Input = ({
   type = "text",
   variant = "default",
   disabled = false,
-  placeholder = "Enter your text",
-  children,
+  placeholder = "",
+  lname,
   infoText,
-}: PropsWithChildren<Inputprops>) => {
+}: Inputprops) => {
   const className = `input-box input-${variant}`;
 
   return (
     <>
-      <label htmlFor="fname">{children}</label>
-      <br></br>
+      <label htmlFor="fname" className="label">
+        {lname}
+      </label>
+      <br />
       <input
         id="fname"
         type={type}
@@ -23,7 +25,7 @@ const Input = ({
         disabled={disabled}
         placeholder={placeholder}
       />
-      <p className="info-text">{infoText}</p>
+      {infoText && <p className="info-text">{infoText}</p>}
     </>
   );
 };
