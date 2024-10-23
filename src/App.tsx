@@ -1,4 +1,5 @@
 import Button from "./components/Button";
+import Input from "./components/Button/Input";
 
 function App() {
   const handleClick = () => {};
@@ -22,6 +23,17 @@ function App() {
       <Button type="secondary" disabled>
         secondary disabled
       </Button>
+      {/* 
+         -------------------------------INPUT SECTION ---------*/}
+      <br />
+      <br />
+      <hr />
+      <Input variant="default">input lable1</Input>
+      <br />
+
+      <Input variant="info" infoText="This is a info text">
+        input lable2
+      </Input>
     </>
   );
 }
