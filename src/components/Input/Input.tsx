@@ -4,18 +4,18 @@ import { Inputprops } from "./types";
 
 const Input = ({
   type = "text",
-  variant = "default",
   disabled = false,
   placeholder = "",
-  lname,
+  lable,
   infoText,
 }: Inputprops) => {
-  const className = `input-box input-${variant}`;
+  // const className = `input-box input-${variant}`;
+  const className = "input-box";
 
   return (
     <>
       <label htmlFor="fname" className="label">
-        {lname}
+        {lable}
       </label>
       <br />
       <input

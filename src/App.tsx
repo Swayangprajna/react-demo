@@ -1,5 +1,5 @@
 import Button from "./components/Button";
-import Input from "./components/Input_box";
+import Input from "./components/Input";
 
 function App() {
   const handleClick = () => {};
@@ -38,11 +38,11 @@ function App() {
       <br />
       <br />
       <hr />
-      <Input lname="lable name1"></Input>
+      <Input lable="lable name1" />
       <br />
       <br />
 
-      <Input infoText="This is a info text" lname="lable name2"></Input>
+      <Input infoText="This is a info text" lable="lable name2" />
     </>
   );
 }
