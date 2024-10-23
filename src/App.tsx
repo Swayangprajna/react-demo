@@ -43,6 +43,9 @@ function App() {
       <br />
 
       <Input infoMessage="This is a info text" lable="lable name2" />
+      <br />
+
+      <Input errorMessage="This field is mandatory" lable="lable name3" />
     </div>
   );
 }
