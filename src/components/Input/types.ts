@@ -3,6 +3,6 @@ export type Inputprops = {
   disabled?: boolean;
   placeholder?: string;
   lable: string;
-  infoMsg?: string;
+  infoMessage?: string;
   value?: string;
 };

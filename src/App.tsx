@@ -42,7 +42,7 @@ function App() {
       <br />
       <br />
 
-      <Input infoMsg="This is a info text" lable="lable name2" />
+      <Input infoMessage="This is a info text" lable="lable name2" />
     </div>
   );
 }
