@@ -9,9 +9,11 @@ const Input = ({
   lable,
   value,
   infoMessage,
+  errorMessage,
 }: Inputprops) => {
   // const className = `input-box input-${variant}`;
-  const className = "input-box";
+
+  const className = errorMessage ? "input-error" : "input-box";
 
   return (
     <>
@@ -28,6 +30,7 @@ const Input = ({
         placeholder={placeholder}
       />
       {infoMessage && <p className="info-message">{infoMessage}</p>}
+      {errorMessage && <p className="error-message">{errorMessage}</p>}
     </>
   );
 };

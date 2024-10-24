@@ -16,4 +16,20 @@
   font-size: 12px;
   margin-top: 2px;
   font-weight: 400;
+  margin-left: 8px;
+  font-weight: bold;
+}
+.input-error {
+  width: 100%;
+  padding: 16px 10px;
+  border-radius: 4px;
+  border: 1px solid #c70003;
+}
+.error-message {
+  color: #c70003;
+  font-size: 12px;
+  margin-top: 2px;
+  font-weight: 400;
+  margin-left: 8px;
+  font-weight: bold;
 }
