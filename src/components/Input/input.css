@@ -33,3 +33,9 @@
   margin-left: 8px;
   font-weight: bold;
 }
+.label-error {
+  color: #c70003;
+  font-size: 12px;
+  font-weight: 700;
+  margin-left: 8px;
+}
