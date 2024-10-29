@@ -1,5 +1,7 @@
 export type ButtonProps = {
-  type?: "primary" | "secondary" | "ternary";
+  variant?: "primary" | "secondary" | "ternary";
+  type?: "submit" | "reset" | "button";
   disabled?: boolean;
   onClick?: () => void;
+  className?: string;
 };

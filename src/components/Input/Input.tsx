@@ -10,6 +10,7 @@ const Input = ({
   value,
   infoMessage,
   errorMessage,
+  onChange,
 }: Inputprops) => {
   // const className = `input-box input-${variant}`;
 
@@ -28,6 +29,7 @@ const Input = ({
         className={className}
         disabled={disabled}
         placeholder={placeholder}
+        onChange={onChange}
       />
       {infoMessage && <p className="info-message">{infoMessage}</p>}
       {errorMessage && <p className="error-message">{errorMessage}</p>}
