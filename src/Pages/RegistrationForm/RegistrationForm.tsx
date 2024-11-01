@@ -1,3 +1,4 @@
+import { FiDownload } from "react-icons/fi";
 import React, { useState } from "react";
 import Button from "../../components/Button";
 import Input from "../../components/Input";
@@ -20,7 +21,7 @@ const RegistrationForm = () => {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    if (password != confirmPassword) {
+    if (password !== confirmPassword) {
       setError("Passwords do not match.");
     } else {
       setError("");
@@ -34,26 +35,30 @@ const RegistrationForm = () => {
   };
   return (
     <>
-      <h1 className="heading">HELLO USER </h1>
+      <h1 className="heading">HELLO USER</h1>
+
       <div className="page-container">
         <form className="form-container" onSubmit={handleSubmit}>
-          <div className="row">
-            <div className="col">
-              <Input lable="First Name" className="form-control" />
+          <div className="row g-3">
+            <div className="col-md-6 ">
+              <Input lable="First Name" infoMessage="name should be [a-zA-Z]" />
             </div>
-            <div className="col">
-              <Input lable="First Name" className="form-control" />
+            <div className="col-md-6">
+              <Input lable="First Name" />
             </div>
           </div>
 
           <div className="col-md-12">
-            <Input lable="Email" type="email" className="form-control" />
+            <Input
+              lable="Email"
+              type="email"
+              infoMessage="email should be @gmail.com"
+            />
           </div>
           <div className="col-md-12">
             <Input
               lable="Enter Password"
               type="password"
-              className="form-control"
               onChange={handlePasswordChange}
             />
           </div>
@@ -62,26 +67,27 @@ const RegistrationForm = () => {
             <Input
               lable="Re-Enter Password"
               type="password"
-              className="form-control"
               onChange={handleConfirmPasswordChange}
               errorMessage={error ? error : ""}
             />
           </div>
 
-          <div className="btn-container">
-            <div className="btn">
-              <Button
-                variant="secondary"
-                type="reset"
-                className=""
-                onClick={handleReset}
-              >
+          <div className="row g-3 ">
+            <div className="col-md-6 btn">
+              <Button variant="secondary" type="reset" onClick={handleReset}>
                 RESET
               </Button>
             </div>
-            <div className="btn">
+            <div className="col-md-6 btn">
               <Button variant="primary" className="" type="submit">
                 SUBMIT
+              </Button>
+            </div>
+          </div>
+          <div className="container text-center btn-ter">
+            <div className="row btn">
+              <Button variant="ternary" className="" type="submit">
+                OPEN GOOGLE WEBSITE <FiDownload />
               </Button>
             </div>
           </div>

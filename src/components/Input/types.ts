@@ -1,9 +1,9 @@
 export type Inputprops = {
   type?: "text" | "password" | "email";
   disabled?: boolean;
+  required?: boolean;
   placeholder?: string;
   lable: string;
-  className: string;
   infoMessage?: string;
   errorMessage?: string;
   value?: string;
