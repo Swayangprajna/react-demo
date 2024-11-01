@@ -4,17 +4,22 @@ import { ButtonProps } from "./types";
 import React, { PropsWithChildren } from "react";
 
 const Button = ({
-  type = "primary",
+  variant = "primary",
   disabled,
   children,
+  type,
   onClick,
 }: PropsWithChildren<ButtonProps>) => {
-  const className = ` button ${type}`;
+  const className = ` button ${variant}`;
 
   return (
     <>
-      <button className={className} disabled={disabled} onClick={onClick}>
-        <FiDownload />
+      <button
+        className={className}
+        disabled={disabled}
+        onClick={onClick}
+        type={type}
+      >
         {children}
       </button>
     </>
@@ -22,3 +27,8 @@ const Button = ({
 };
 
 export default Button;
+
+/* <button className={className} disabled={disabled} onClick={onClick}>
+        <FiDownload />
+        {children}
+      </button> */
